@@ -1,0 +1,22 @@
+# connection
+goodway-group:
+  target: dev
+  outputs:
+    dev:
+      type: redshift
+      method: iam
+      cluster_id: dwprod01
+      host: dwprod01.ctsuegxlvabs.us-east-1.redshift.amazonaws.com
+      user: shong
+      iam_profile: default
+      dbname: dwdb01
+      schema: ds_sandbox
+      port: 5439
+
+      # # Optional Redshift configs:
+      # sslmode: prefer
+      # role: None
+      # ra3_node: true 
+      # autocommit: true 
+      # threads: 4
+      # connect_timeout: None
